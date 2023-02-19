@@ -36,3 +36,8 @@
     transform: rotate(360deg);
   }
 }
+
+.App-link2 {
+  color: #ddb463;
+  font-size: calc(20px + 2vmin);
+}
