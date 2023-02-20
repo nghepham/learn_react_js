@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import logo from './assets/logo.svg';
 import logo1 from './assets/logo1.svg';
 import './App.css';
@@ -7,24 +7,35 @@ import { DarkModeSwitch } from 'react-toggle-dark-mode';
 
 
 function App() {
-  const [isDarkMode, setDarkMode] = React.useState(false);
+  const [theme, setTheme] = useState(
+    localStorage.getItem('theme') || 'light'
+  );
 
-  const toggleDarkMode = (checked) => {
-    setDarkMode(checked);
+  const toggleDarkMode = () => {
+    if (theme === 'light') {
+      setTheme('dark');
+    } else {
+      setTheme('light');
+    }
   };
 
+  useEffect(() => {
+    localStorage.setItem('theme', theme);
+    document.body.className = theme;
+  }, [theme]);
+
   return (
-    <div className="App">
+    <div className={`${theme}`}>
       <div className='App-setting'>
         <DarkModeSwitch
           style={{ margin: '1rem' }}
-          checked={isDarkMode}
+          checked={theme === 'dark'}
           onChange={toggleDarkMode}
-          size={30}
+          size={20}
         />
       </div>
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={logo} className="App-logo" alt="logo" unselectable="on" />
         <h1>Hello World</h1>
         <p>
           Edit <code>src/App.js</code> and save to reload.
