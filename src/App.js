@@ -1,7 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
 import logo from './assets/logo.svg';
-import logo1 from './assets/logo1.svg';
 import './App.css';
 import { DarkModeSwitch } from 'react-toggle-dark-mode';
 
@@ -19,6 +18,10 @@ function App() {
     }
   };
 
+  const onClickBtn = () => {
+    alert('Hello world');
+  };
+
   useEffect(() => {
     localStorage.setItem('theme', theme);
     document.body.className = theme;
@@ -27,6 +30,14 @@ function App() {
   return (
     <div className={`${theme}`}>
       <div className='App-setting'>
+        <div className='App-menu-container'>
+          <div className='App-menu'>Product</div>
+          <div className='App-menu'>Features</div>
+          <div className='App-menu'>Customers</div>
+          <div className='App-menu'>Pricing</div>
+          <div className='App-menu'>Log In</div>
+          <button className='App-menu' onClick={() => onClickBtn()}>Try demo</button>
+        </div>
         <DarkModeSwitch
           style={{ margin: '1rem' }}
           checked={theme === 'dark'}
@@ -57,7 +68,6 @@ function App() {
 
         <a style={{ margin: '20px' }} className='App-link2' href="/images/myw3schoolsimage.jpg" download="w3logo">Download w3logo</a>
         <p>This is <b>paragraph</b>.<br />This is example content for <i>paragraph</i> on the web page, which I try to learn a new thinks and new languages</p>
-        <img className='App-img' src={logo1} alt='Saforus' />
         <ul style={{ listStyleType: 'square' }}>
           <li>Teacher</li>
           <li>Artificial Intelligent - AI</li>

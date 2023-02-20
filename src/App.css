@@ -9,7 +9,10 @@
   color: #333;
   text-align: center;
 }
-
+.App-menu {
+  padding: 1vmin;
+  font-size: calc(10px + 2vmin);
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -28,9 +31,15 @@
 
 .App-setting {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: flex-end;
+}
+.App-menu-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .App-header {
