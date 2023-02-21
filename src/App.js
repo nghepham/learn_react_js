@@ -13,6 +13,7 @@ import HomePage from './pages/HomePage';
 import ContactPage from './pages/ContactPage';
 import Dashboard from './pages/dashboard/Dashboard';
 import PageNotFound from './pages/PageNotFound';
+import SignUpPage from './pages/SignUpPage';
 
 
 function App() {
@@ -50,6 +51,7 @@ function App() {
             <Route path="/home" element={<HomePage />} />
             <Route path="/" element={<Navigate replace to="/home" />} />
             <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/signup" element={<SignUpPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="*" element={<PageNotFound />} />
           </Routes>

@@ -144,7 +144,7 @@ function HomePage() {
           </section>
         </div>
       </main>
-      <footer>
+      <footer id='footer'>
         <div>
           <p>This is footer</p>
         </div>
