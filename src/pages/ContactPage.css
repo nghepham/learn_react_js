@@ -1,0 +1,29 @@
+.btn-subscriber {
+  color: black;
+  font-size: calc(10px + 2vmin);
+  padding: 10px 20px;
+  background-color: lightblue;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn-subscriber:hover {
+  opacity: 0.6;
+}
+
+.main {
+  margin: 0;
+}
+
+.social-group {
+  margin-top: 10px;
+  flex-direction: row;
+  display: flex;
+}
+
+.btn-container {
+  margin-right: 10px;
+  display: inline-block;
+}
