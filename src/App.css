@@ -1,22 +1,25 @@
 .dark {
-  background-color: #333;
+  background: linear-gradient(to bottom, #add8e6, darkblue);
   color: #fff;
-  margin-left: 10vmin;
-  margin-right: 10vmin;
-  margin-bottom: 10vmin;
+  overflow: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .light {
   background-color: #fff;
   color: #333;
-  margin-left: 10vmin;
-  margin-right: 10vmin;
-  margin-bottom: 10vmin;
 }
 
 #navbar {
+  width: 100%;
   background-color: lightblue;
   padding: 16px;
+  position: fixed;
+  z-index: 1;
 }
 
 .header-menu {
@@ -29,19 +32,20 @@
 
 #session {
   padding: 16px;
-  background-color: lightskyblue;
 }
 
 .session h3 {
   color: darksalmon;
-} 
+}
+
 .session_image {
   width: 50vmin;
   height: 50vmin;
 }
 
 .session_desc {
-  font-size: calc(10px + 2vmin);;
+  font-size: calc(10px + 2vmin);
+  ;
   text-align: justify;
 }
 
@@ -51,6 +55,7 @@
   background-color: #61dafb;
   margin-right: 2px;
 }
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -73,6 +78,7 @@
   justify-content: flex-end;
   align-items: flex-end;
 }
+
 .App-menu-container {
   display: flex;
   flex-direction: row;
@@ -83,7 +89,7 @@
 }
 
 #header {
-  min-height: 100vh;
+  min-height: 100vmin;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -93,7 +99,6 @@
 }
 
 #main {
-  background-color: lightgrey;
   padding: 24px;
 }
 
@@ -127,11 +132,11 @@
   -webkit-user-select: none;
   -ms-user-select: none;
 }
+
 .article {
   padding: 16px;
   margin-top: 16px;
   margin-bottom: 16px;
-  background-color: lightseagreen;
 }
 
 .div-table {
@@ -141,16 +146,20 @@
   align-items: center;
   padding: 16px;
 }
+
 table {
   width: calc(700px + 2vmin);
-  background-color: lightblue;
 }
-table, td, th {
-  border: 1px solid black;
+
+table,
+td,
+th {
+  border: 1px solid white;
   border-collapse: collapse;
   font-size: calc(20px + 2vmin);
-  color: black;
+  color: white;
 }
+
 td {
   padding: 10px;
 }
