@@ -7,7 +7,9 @@ function Header() {
       <nav id='navbar'>
         <Link to="/">Home</Link> |{" "}
         <Link to="contact">Contact</Link> |{" "}
-        <Link to="signup">Sign up</Link>
+        <Link to="signup">Sign up</Link> |{" "}
+        <Link to="google">Google</Link> |{" "}
+        <Link to="sign-in">Sign in</Link>
       </nav>
     </header>
   );

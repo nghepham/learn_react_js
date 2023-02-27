@@ -13,6 +13,8 @@ import ContactPage from './pages/ContactPage';
 import Dashboard from './pages/dashboard/Dashboard';
 import PageNotFound from './pages/PageNotFound';
 import SignUpPage from './pages/SignUpPage';
+import Google from './pages/Google';
+import SignIn from './pages/SignIn';
 
 
 function App() {
@@ -26,7 +28,9 @@ function App() {
             <Route path="/" element={<Navigate replace to="/home" />} />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/signup" element={<SignUpPage />} />
+            <Route path="/sign-in" element={<SignIn />} />
             <Route path="/contact" element={<ContactPage />} />
+            <Route path="/google" element={<Google />} />
             <Route path="*" element={<PageNotFound />} />
           </Routes>
         </div>
