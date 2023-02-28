@@ -2,7 +2,6 @@
 import React from 'react';
 import '../App.css';
 import './SignUpPage.css'
-import logo from '../assets/logo.svg';
 
 function SignUpPage() {
   return (

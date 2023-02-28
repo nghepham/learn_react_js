@@ -15,6 +15,7 @@ import PageNotFound from './pages/PageNotFound';
 import SignUpPage from './pages/SignUpPage';
 import Google from './pages/Google';
 import SignIn from './pages/SignIn';
+import Service from './pages/Service';
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
             <Route path="/sign-in" element={<SignIn />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/google" element={<Google />} />
+            <Route path="/service" element={<Service />} />
             <Route path="*" element={<PageNotFound />} />
           </Routes>
         </div>

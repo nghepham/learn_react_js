@@ -9,7 +9,8 @@ function Header() {
         <Link to="contact">Contact</Link> |{" "}
         <Link to="signup">Sign up</Link> |{" "}
         <Link to="google">Google</Link> |{" "}
-        <Link to="sign-in">Sign in</Link>
+        <Link to="sign-in">Sign in</Link> |{" "}
+        <Link to="service">Service</Link>
       </nav>
     </header>
   );
