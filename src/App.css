@@ -19,7 +19,7 @@
   height: 5%;
   background-color: lightblue;
   padding: 16px;
-  position: fixed;
+  position: relative;
   z-index: 1;
 }
 

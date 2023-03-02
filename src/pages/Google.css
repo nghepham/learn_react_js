@@ -1,4 +1,20 @@
-.container {
-  margin-top: 10%;
-  width: 100%;
+#list-state {
+  display: grid;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: auto auto auto auto;
 }
+
+@media screen and (max-width: 900px) {
+  #list-state {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  #list-state {
+    grid-template-columns: auto;
+  }
+}
+

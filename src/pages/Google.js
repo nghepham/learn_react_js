@@ -1,32 +1,74 @@
-import React from 'react'
-import app from '../assets/apps.svg';
+import { Card, CardActionArea } from '@mui/material';
+import CardContent from '@mui/material/CardContent';
+import Typography from '@mui/material/Typography';
 
+import React from 'react'
+import './Google.css'
 
 export default function Google() {
-  return (
-    <div className='container'>
-      <header id='g-header'>
-        <ul className='menu'>
-          <li><a href='#'>Gmail</a></li>
-          <li><a href='#'>Images</a></li>
-          <li>
-            <a href='#'>
-              <img src={app} width={20} height={20} />
-            </a>
-          </li>
-          <li>
-            <a href='#'>
-              <img src={app} width={20} height={20} />
-            </a>
-          </li>
-        </ul>
-      </header>
-      <main>
 
-      </main>
-      <footer>
-        
-      </footer>
+  const data = [
+    {
+      title: 'item 1',
+      description: 'Hello world! This is description for item',
+      complete: false,
+      disable: false,
+    },
+    {
+      title: 'item 2',
+      description: 'Hello world! This is description for item 3',
+      complete: false,
+      disable: false,
+    },
+    {
+      title: 'item 3',
+      description: 'Hello world! This is description for item 3',
+      complete: false,
+      disable: false,
+    },
+    {
+      title: 'item 4',
+      description: 'Hello world! This is description for item 4',
+      complete: false,
+      disable: false,
+    },
+    {
+      title: 'item 5',
+      description: 'Hello world! This is description for item 5',
+      complete: false,
+      disable: false,
+    },
+    {
+      title: 'item 6',
+      description: 'Hello world! This is description for item 6',
+      complete: false,
+      disable: false,
+    },
+    {
+      title: 'item 7',
+      description: 'Hello world! This is description for item 7',
+      complete: false,
+      disable: false,
+    },
+  ];
+
+  return (
+    <div id='list-state'>
+      {data.map((e, index) => {
+        return (
+          <Card key={index} sx={{ width: 200, margin: 1}}>
+            <CardActionArea>
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="div">
+                  {e.title}
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                  {e.description}
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+          </Card>)
+      })}
     </div>
   )
 }
