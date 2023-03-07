@@ -5,12 +5,15 @@ import { useDispatch, useSelector } from 'react-redux';
 // import { addTodo } from '../../redux/actions';
 import { v4 as uuidv4 } from 'uuid';
 import { useState } from 'react';
+import todoListSlide from './todoListSlide';
+import { todoListRemainingSelector } from '../../redux/selectors';
 
 export default function TodoList() {
   const [todoName, setTodoName] = useState('');
   const [priority, setPriority] = useState('Medium');
+  const dispatch = useDispatch();
 
-  const [todoList, setTodoList] = useState([]);
+  const todoList = useSelector(todoListRemainingSelector);
 
   const handleInputChange = (e) => {
     setTodoName(e.target.value);
@@ -21,9 +24,16 @@ export default function TodoList() {
   }
 
   const handleAddButtonClick = () => {
-    
-  }
+    dispatch(todoListSlide.actions.addTodo({
+      id: uuidv4(),
+      name: todoName,
+      priority: priority,
+      completed: false,
+    }))
 
+    setTodoName('')
+    setPriority('Medium');
+  }
 
   return (
     <Row style={{ height: 'calc(100% - 40px)' }}>

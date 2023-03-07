@@ -1,10 +1,8 @@
 import React from 'react'
-import { Typography, Divider } from 'antd';
+import { Divider } from 'antd';
 import TodoList from '../components/TodoList';
 import Filters from '../components/Filters';
 import './TodoPage.css'
-
-const { Title } = Typography;
 
 export default function TodoPage() {
   return (
@@ -15,12 +13,11 @@ export default function TodoPage() {
         display: 'flex',
         flexDirection: 'column',
         backgroundColor: 'white',
-        padding: 20,
+        padding: '10px 20px',
         boxShadow: '0 0 10px 4px #bfbfbf',
         borderRadius: 5,
-        height: '90vh',
+        height: '85vh',
       }}>
-      <Title style={{ textAlign: 'center' }}>TODO APP</Title>
       <Filters />
       <Divider />
       <TodoList />
