@@ -19,22 +19,6 @@ function HomePage() {
           </nav>
         </div>
         <img src={logo} className="App-logo" alt="logo" unselectable="on" />
-        {/* <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <a
-          style={{ margin: '20px' }}
-          className='App-link2'
-          href="https://www.w3schools.com"
-          rel="noopener noreferrer"
-          target="_blank">W3 school link</a>
-
-        <a style={{ margin: '20px' }} className='App-link2' href="/images/myw3schoolsimage.jpg" download="w3logo">Download w3logo</a> */}
       </header>
       <main id='main'>
         <div className='div-container'>

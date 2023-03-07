@@ -16,6 +16,8 @@ import SignUpPage from './pages/SignUpPage';
 import Google from './pages/Google';
 import SignIn from './pages/SignIn';
 import Service from './pages/Service';
+import SplitNav from './pages/SplitNav';
+import TodoPage from './pages/TodoPage';
 
 
 function App() {
@@ -33,6 +35,8 @@ function App() {
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/google" element={<Google />} />
             <Route path="/service" element={<Service />} />
+            <Route path="/split" element={<SplitNav />} />
+            <Route path="/todo" element={<TodoPage />} />
             <Route path="*" element={<PageNotFound />} />
           </Routes>
         </div>

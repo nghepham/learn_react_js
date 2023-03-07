@@ -10,7 +10,9 @@ function Header() {
         <Link to="signup">Sign up</Link> |{" "}
         <Link to="google">Google</Link> |{" "}
         <Link to="sign-in">Sign in</Link> |{" "}
-        <Link to="service">Service</Link>
+        <Link to="service">Service</Link> |{" "}
+        <Link to="split">Split Nav</Link> |{" "}
+        <Link to="todo">Todo list</Link>
       </nav>
     </header>
   );
